@@ -25,9 +25,6 @@ class MidiController:
     def start(self):
         self.midiin.set_callback(self.run)
 
-    def set_multiplier(self, multiplier):
-        self.midiClock.set_multiplier(multiplier)
-
     def set_effect(self, effect):
         self.midiClock.set_effect(effect)
 

@@ -37,5 +37,8 @@ class EffectController():
 
             if best_rule is not None and best_rule["Effect"] != self.current_effect:
                 self.set_current_effect(best_rule["Effect"])
-                self.midiController.set_multiplier(best_rule["Multiplier"])
                 self.current_effect = best_rule["Effect"]
+        else:
+            if "AlternateColorLedOnly" != self.current_effect and deck == self.current_deck :
+                self.set_current_effect("AlternateColorLedOnly")
+                self.current_effect = "AlternateColorLedOnly"

@@ -28,8 +28,11 @@ class MidiClock:
         self.nobeat_callback(effect.wait)
         if effect.multiplier() is not None:
             self.set_multiplier(effect.multiplier())
+        else:
+            self.set_multiplier(1)
 
     def set_multiplier(self, multiplier):
+        print("Multiplier is %s " % multiplier)
         self.multiplier = multiplier
         self.sync()
 

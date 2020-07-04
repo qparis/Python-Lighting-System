@@ -1,5 +1,3 @@
-import math
-
 import pandas as pd
 
 from EffectController import EffectController
@@ -16,6 +14,8 @@ class PartyController:
         self.dmxUsb = OpenDmxUsb()
         self.effectFactory = EffectFactory(self.dmxUsb)
         self.midiClock = MidiClock()
+        self.manualController = ManualController(self.midiClock, self.set_current_effect)
+
         self.denonHc4500Controller = DenonHC4500VirtualLCD()
         self.midiController = MidiController(self.midiClock, self.denonHc4500Controller)
         self.set_current_effect("Init")
@@ -32,14 +32,14 @@ class PartyController:
         self.effect_controller = EffectController(self.set_current_effect, self.midiController)
 
     def process_song(self, deck, line, song):
-        if line == 1:
+        if line == 1 or line == 2:
             return
 
         if self.playing_states[deck]["playing"] is False:
             print("Deck not playing. Ignoring song: '%s'" % song)
             return
 
-        print("Looking for <%s>" % song)
+        print("Looking for <%s> (%s)" % (song, line))
         rules = list(pd.read_csv("songs.csv", sep=';').T.to_dict().values())
 
         matching_rules = []
@@ -65,12 +65,13 @@ class PartyController:
         self.denonHc4500Controller.set_play_callback(self._play_callback)
         self.denonHc4500Controller.set_track_callback(self.process_song)
         self.denonHc4500Controller.set_position_callback(self.process_position)
-        ManualController(self.midiClock, self.set_current_effect).run()
+        self.manualController.run()
 
     def _play_callback(self, decks, event_deck):
         self.playing_states = decks
         if decks[0]["playing"] is False and decks[1]["playing"] is False:
             self.midiController.set_effect(self.effectFactory.getEffectInstance("Blackout"))
+            print(self.playing_states)
         else:
             if decks[0]["playing"] is False and decks[1]["playing"] is True:
                 for line in decks[1]["track"]:
@@ -88,6 +89,7 @@ class PartyController:
 
     def set_current_effect(self, effect):
         self.current_effect = effect
+        self.manualController.setCurrentScene(effect)
         self.midiController.set_effect(self.effectFactory.getEffectInstance(self.current_effect))
 
 

@@ -1,18 +1,19 @@
 Song;Effect;Multiplier;MinimumTime
-Day 'N' Night (Agent X Remix);BlueRed;1;
-Day 'N' Nite (Radio Edit);BlueRed;1;
-Day 'N' Nite (Radio Edit);OnOff;1;8
-Day 'N' Nite (Radio Edit);BlueRed;1;9
-Day 'N' Nite (Radio Edit);OnOff;1;37.5
-Day 'N' Nite (Radio Edit);BlueRed;1;39
-Day 'N' Nite (Radio Edit);OnOff;1;104
-Day 'N' Nite (Radio Edit);BlueRed;1;106
-Day 'N' Nite (Radio Edit);OnOff;1;133.6
-Day 'N' Nite (Radio Edit);BlueRed;1;135.6
-Day 'N' Nite (Radio Edit);OnOff;1;118.8
-Day 'N' Nite (Radio Edit);BlueRed;1;120.8
-Day 'N' Nite (Radio Edit);OnOff;1;111.4
-Day 'N' Nite (Radio Edit);BlueRed;1;113.4
+Day 'N' Night (Agent X Remix);CyanYellow;1;
+Day 'N' Night (Agent X Remix);OnOffFull;1;68
+Day 'N' Nite (Radio Edit);BluePurple;1;
+Day 'N' Nite (Radio Edit);OnOffFull;1;8
+Day 'N' Nite (Radio Edit);BluePurple;1;9
+Day 'N' Nite (Radio Edit);OnOffFull;1;37.5
+Day 'N' Nite (Radio Edit);BluePurple;1;39
+Day 'N' Nite (Radio Edit);OnOffFull;1;104
+Day 'N' Nite (Radio Edit);BluePurple;1;106
+Day 'N' Nite (Radio Edit);OnOffFull;1;133.6
+Day 'N' Nite (Radio Edit);BluePurple;1;135.6
+Day 'N' Nite (Radio Edit);OnOffFull;1;118.8
+Day 'N' Nite (Radio Edit);BluePurple;1;120.8
+Day 'N' Nite (Radio Edit);OnOffFull;1;111.4
+Day 'N' Nite (Radio Edit);BluePurple;1;113.4
 Green Light(John Legend & Qndre 3000);BlueGreen;1;
 Blue (Da Da dee);BlueEffect;1;34
 Blue (Da Da dee);BlueCyanSmooth;0.5;
@@ -21,6 +22,7 @@ Animals (Original Mix);AlternateColor;1;
 Wizard (Steerner Bootleg);AlternateColor;1;
 Flute (Original Mix);AlternateColor;1;
 The Keys;BlueGreen;0.25;
+The Keys;AlternateColorLedOnly;1;38.8
 Stamp On The Ground - Extended Mix;AlternateColor;1;
 Loco (Extended Mix);AlternateColor;1;
 Pursuit of Happiness [Steve Aoki Remix];YellowRed;1;
@@ -34,12 +36,10 @@ Single Ladies (Extended Mix);BlueRed;1;
 Single Ladies (Extended Mix);BlueGreen;1;46
 No Stress ( extended mix);AlternateColor;1;
 One Desire (Mondotek Remix);BlueGreen;1;
-Sandstorm;FastAndFlash;1;
 Sexy Bitch (Feat. Akon) Afrojack Remix;FastAndFlash;1;
 When Love Takes Over (Electro Extented);AlternateColor;1;
 Single Ladies (Extended Mix);Flash;1;60
 Single Ladies (Extended Mix);BlueEffect;1;75
-Day 'N' Night (Agent X Remix);OnOff;1;68
 L' Aventurier;AlternateColor;1;
 L' Aventurier;RedCrescendo;1;118
 L' Aventurier;WhiteCrescendo;1;124
@@ -86,7 +86,7 @@ Break the Rules;AlternateColorLedOnly;1;69
 Sing Hallelujah;LightFlash;1;
 Sing Hallelujah;AlternateColorLedOnly;1;15
 Sing Hallelujah;Blackout;1;31
-Sing Hallelujah;AlternateColorLedOnly;1;35
+Sing Hallelujah;AlternateColorLedOnly;1;34.2
 I Got You (I Feel Good);Red;1;
 I Got You (I Feel Good);AlternateColorLedOnly;1;2
 I Got You (I Feel Good);BlueCyan;1;14
@@ -113,3 +113,35 @@ I Got You (I Feel Good);AlternateColorLedOnly;1;80.6
 Eye Of The Tiger;WhiteStrobeLow;1;
 Eye Of The Tiger;EyeOfTheTiger;1.5;9.2
 Eye Of The Tiger;AlternateColorLedOnly;1;26
+Sandstorm;FastAndFlash;1;
+Shape of You;BlueCyan;1;
+Shape of You;AlternateColorLedOnly;1;50
+Shape of You;AlternateColor;1;70
+Shape of You;AlternateColorLedOnly;1;90
+Despacito;OrangeRedSmooth;0.5;
+Despacito;AlternateColorLedOnlyQuarterTempo;1;20
+Dragostea din tei;GreenSmooth;0.5;
+Dragostea din tei;GreenFlash;1;14.4
+Dragostea din tei;AlternateColorLedOnly;1;61
+Dragostea din tei;White;1;31.9
+Dragostea din tei;AlternateColorLedOnly;1;33
+FRIENDS;PinkMix;1;
+Let's Groove;CyanYellow;1;
+Upside Down;BlueRed;1;
+Upside Down;AlternateColorLedOnly;1;4
+Upside Down;BlueRed;1;18.5
+Upside Down;AlternateColorLedOnly;1;22
+Upside Down;BlueRed;1;28
+Upside Down;AlternateColorLedOnly;1;32
+Ring My Bell (Re-Recorded) [Remastered];BlueRed;1;
+Ring My Bell (Re-Recorded) [Remastered];CyanYellow;1;17
+Ring My Bell (Re-Recorded) [Remastered];AlternateColorLedOnly;1;32
+The Final Countdown;Blackout;1;
+The Final Countdown;Blue5CrescendoQuarterTempo;1;0.7
+The Final Countdown;AlternateColorLedOnlyQuarterTempo;1;10.5
+The Final Countdown;AlternateColorLedOnly;1;51
+Paris Latino - Original Version 1983;AlternateColorContrasted;1;
+Don't Stop Me Now;BlueCyanSmoothQuarter;1;0
+Don't Stop Me Now;AlternateColorLedOnly;1;32
+Femme Like U (Radio Edit);CyanYellowPurple;1;
+Cotton Eyed;LightFlash;1;
