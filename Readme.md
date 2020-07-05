@@ -22,7 +22,7 @@ You also automatically change the effects when a new track is played on Deck 1 &
   - You may use songs.csv.template file 
   - Write:
     - First column: the exact name of the track
-    - Second column: the name of the effect you want to please
+    - Second column: the name of the effect you want to play
     - Third column: ignored for now
     - Fourth column: the timestamp when you want the effect to be triggered 
     
