@@ -10,5 +10,7 @@ class Green:
             7: 0,  # Red
             8: 255,
             9: 0,
-            10: 0  # Strobe,
+            10: 0,  # Strobe,
+            15: 255,
+            17: 255  # Green Colorbox,
         }]

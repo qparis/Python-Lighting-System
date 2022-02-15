@@ -27,4 +27,5 @@ class AbstractEffect(metaclass=abc.ABCMeta):
                 for channel in light_application:
                     channelVals[channel] = int(min(255, max(0, light_application[channel])))
                 self.dmxUsb.send_dmx(channelVals)
+
         self.i += 1

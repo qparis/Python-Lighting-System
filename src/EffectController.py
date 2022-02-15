@@ -39,6 +39,6 @@ class EffectController():
                 self.set_current_effect(best_rule["Effect"])
                 self.current_effect = best_rule["Effect"]
         else:
-            if "AlternateColorLedOnly" != self.current_effect and deck == self.current_deck :
-                self.set_current_effect("AlternateColorLedOnly")
-                self.current_effect = "AlternateColorLedOnly"
+            if "AlternateColor" != self.current_effect and deck == self.current_deck :
+                self.set_current_effect("AlternateColor")
+                self.current_effect = "AlternateColor"

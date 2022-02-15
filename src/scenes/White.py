@@ -13,5 +13,10 @@ class White:
             10: 0,  # Strobe,
             11: 0,
             13: 0,
-            14: 0
+            14: 0,
+            15: 255,
+            16: 255,
+            17: 255,  # Green Colorbox,
+            18: 255, # Ambre
+            19: 255  # Ambre
         }]

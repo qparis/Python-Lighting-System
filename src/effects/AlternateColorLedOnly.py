@@ -16,5 +16,10 @@ class AlternateColorLedOnly(AbstractEffect):
             10: 0,
             11: 0,
             13: 0,
-            14: 0
+            14: 0,
+            15: 255,
+            16: 255 * (i % 2),
+            17: 255 * (i % 3),  # Green Colorbox,
+            18: 255 * (i % 5),  # Blue
+            19: 255 * (i % 7)  # Ambre
         }]

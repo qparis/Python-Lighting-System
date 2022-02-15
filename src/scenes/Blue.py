@@ -10,5 +10,7 @@ class Blue:
             7: 0,  # Red
             8: 0,
             9: 255,
-            10: 0  # Strobe,
+            10: 0,
+            15: 255,
+            18: 255  # Blue Colorbox,
         }]
